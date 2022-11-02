@@ -1,12 +1,12 @@
 #!/bin/bash
-
-if [ -d /home/mivancic/code ]; then
+cd ~
+if [ -d code ]; then
   echo "code directory already exists, continuing..."
   else
     echo "creating code directory..."
-    mkdir /home/mivancic/code
+    mkdir code
 fi
-cd ~
+
 for file in *
   do
     if [ -e $file/.git ]; then
